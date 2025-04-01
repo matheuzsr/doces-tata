@@ -10,12 +10,12 @@
 
         <div class="flex flex-col md:flex-row gap-4">
           <a
-            href="https://instagram.com/docestata_"
+            href="https://www.instagram.com/docestata___?igsh=cHVudHZjdmdreXQ1"
             target="_blank"
             class="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full transition-colors"
           >
             <Instagram class="w-5 h-5" />
-            <span>@docestata_</span>
+            <span>@docestata___</span>
           </a>
           <a
             href="https://wa.me/5528999944690"
