@@ -3,10 +3,11 @@
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center">
         <img
-          src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&q=80&w=200"
+          src="/logo.jpeg"
           alt="Doces Tatá"
           class="w-32 h-32 rounded-full border-4 border-pink-200 object-cover"
         />
+
         <div class="flex flex-col md:flex-row gap-4">
           <a
             href="https://instagram.com/docestata_"
@@ -32,5 +33,4 @@
 
 <script lang="ts" setup>
 import { Instagram } from "lucide-vue-next";
-
 </script>
