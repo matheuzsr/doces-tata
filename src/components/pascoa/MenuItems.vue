@@ -17,14 +17,16 @@
             {{ item.name }}
           </h3>
           <p class="text-gray-600 mb-4">{{ item.description }}</p>
-          <div class="flex items-center">
+          <div class="flex items-center flex-wrap">
             <span
               v-for="(flavor, index) in item.flavors"
               :key="index"
               class="py-1 text-slate-500 text-sm"
             >
-            <span v-if="index !== 0" class="ml-2">|</span> 
+            <span class="text-wrap">
               {{ flavor }}
+              <span v-if="item.flavors.length -1 !== index" class="mx-1">|</span>
+            </span> 
             </span>
           </div>
           <div class="flex flex-wrap gap-2 mb-4">
