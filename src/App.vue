@@ -7,7 +7,6 @@ import Footer from "./components/pascoa/Footer.vue";
 import MenuItems, { EasterItems } from "./components/pascoa/MenuItems.vue";
 
 const easterItems = ref<EasterItems[]>([]);
-
 const loadProducts = async () => {
   const { data, error } = await supabase
     .from("products")
