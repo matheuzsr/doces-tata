@@ -59,7 +59,7 @@ function getURL(product: EasterItems) {
   const phoneNumber = "5528999944690";
 
   const message = `Olá, Tata! Gostaria de encomendar:\n\n` +
-    `**${product.name}**\n` +
+    `*🥚 ${product.name}*\n` +
     `📌 *${product.description}*\n` +
     `💰 *Valor:* ${product.price}\n` +
     `Podemos seguir com o pedido?`;
