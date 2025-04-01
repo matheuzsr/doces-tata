@@ -3,7 +3,7 @@
     <div class="container mx-auto px-4 text-center">
       <p class="text-lg mb-4">Faça sua encomenda com antecedência!</p>
       <div class="flex justify-center gap-4 mb-6">
-        <a href="https://www.instagram.com/docestata___?igsh=cHVudHZjdmdreXQ1" target="_blank" class="hover:text-pink-300 transition-colors">
+        <a href="https://www.instagram.com/docestata___" target="_blank" class="hover:text-pink-300 transition-colors">
           <Instagram class="w-6 h-6" />
         </a>
         <a href="https://wa.me/5528999944690" target="_blank" class="flex items-center gap-2 hover:text-green-300 transition-colors">

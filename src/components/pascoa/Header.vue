@@ -10,7 +10,7 @@
 
         <div class="flex flex-col md:flex-row gap-4">
           <a
-            href="https://www.instagram.com/docestata___?igsh=cHVudHZjdmdreXQ1"
+            href="https://www.instagram.com/docestata___"
             target="_blank"
             class="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full transition-colors"
           >
