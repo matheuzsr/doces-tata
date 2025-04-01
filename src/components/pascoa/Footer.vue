@@ -15,7 +15,7 @@
           target="_blank"
           class="flex gap-2 hover:text-green-300 transition-colors"
         >
-          <img class="w-6 h-6" src="/public/whats-app.svg" />
+          <img class="w-6 h-6" src="/whats-app.svg" />
           (28)99994-4690
         </a>
       </div>

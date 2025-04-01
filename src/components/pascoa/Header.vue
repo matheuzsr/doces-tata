@@ -21,7 +21,7 @@
             target="_blank"
             class="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition-colors"
           >
-            <img class="w-5 h-5" src="/public/whats-app.svg" />
+            <img class="w-5 h-5" src="/whats-app.svg" />
             <span>Pedidos</span>
           </a>
         </div>
