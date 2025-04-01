@@ -33,5 +33,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Github, Instagram, Linkedin } from "lucide-vue-next";
+import { Instagram } from "lucide-vue-next";
 </script>
