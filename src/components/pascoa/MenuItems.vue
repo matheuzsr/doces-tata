@@ -31,7 +31,7 @@
               item.price
             }}</span>
             <a
-              href="https://wa.me/5528999944690"
+              :href="getURL(item)"
               target="_blank"
               class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 transition-colors"
             >
@@ -54,7 +54,18 @@ interface EasterItems {
   image: string;
 }
 
+
+function getURL(product: EasterItems) {
+  const phoneNumber = "5528999944690";
+
+  const message = `Olá, Tata! Gostaria de encomendar:\n\n` +
+    `**${product.name}**\n` +
+    `📌 *${product.description}*\n` +
+    `💰 *Valor:* ${product.price}\n` +
+    `Podemos seguir com o pedido?`;
+
+return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+}
+
 defineProps<{ items: EasterItems[] }>();
 </script>
-
-name description price sizes image
