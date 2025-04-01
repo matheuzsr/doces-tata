@@ -19,6 +19,7 @@
           (28)99994-4690
         </a>
       </div>
+      <p class="text-sm mt-4">Created by GitHub <a href="https://github.com/matheuzsr" target="_blank" class="hover:underline">/matheuzsr</a></p>
     </div>
   </footer>
 </template>
