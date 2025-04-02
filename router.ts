@@ -5,6 +5,10 @@ const routes = [
   {
     path: '/',
     component: App,
+  },
+  {
+    path: '/pascoa-2025',
+    component: () => import('./pages/pascoa-2025.vue'),
   }
 ];
 
