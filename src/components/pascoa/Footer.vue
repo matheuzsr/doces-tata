@@ -7,6 +7,8 @@
           href="https://www.instagram.com/docestata___"
           target="_blank"
           class="hover:text-pink-300 transition-colors"
+          aria-label="Visitar o perfil do Instagram @docestata___"
+          title="Visitar o perfil do Instagram @docestata___"
         >
           <Instagram class="w-6 h-6" />
         </a>
@@ -14,6 +16,8 @@
           href="https://wa.me/5528999944690"
           target="_blank"
           class="flex items-center gap-2 hover:text-green-300 transition-colors"
+          title="Fazer pedido pelo WhatsApp"
+          aria-label="Fazer pedido pelo WhatsApp"
         >
           <img class="w-6 h-6" src="/whats-app.svg" alt="whats-app-button" />
           (28)99994-4690
