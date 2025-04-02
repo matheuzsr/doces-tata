@@ -8,7 +8,7 @@
           class="w-32 h-32 rounded-full border-4 border-pink-200 object-cover"
         />
 
-        <div class="flex flex-col md:flex-row gap-4">
+        <div class="flex flex-col-reverse md:flex-row gap-4">
           <a
             href="https://www.instagram.com/docestata___"
             target="_blank"

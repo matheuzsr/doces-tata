@@ -12,7 +12,8 @@ const loadProducts = async () => {
   const { data, error } = await supabase
     .from("products")
     .select("*")
-    .is("deleted_at", null);
+    .is("deleted_at", null)
+    .order("order", { ascending: true });
 
   if (error) {
     console.error("Error loading products:", error);
