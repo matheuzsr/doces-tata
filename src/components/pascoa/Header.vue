@@ -12,16 +12,20 @@
           <a
             href="https://www.instagram.com/docestata___"
             target="_blank"
-            class="flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-medium px-4 py-2 rounded-full transition-colors
-"
+            class="flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-medium px-4 py-2 rounded-full transition-colors"
+            aria-label="Visitar o perfil do Instagram @docestata___"
+            title="Visitar o perfil do Instagram @docestata___"
           >
-            <Instagram class="w-5 h-5" />
+            <Instagram class="w-5 h-5" aria-hidden="true" />
             <span>@docestata___</span>
           </a>
+
           <a
             href="https://wa.me/5528999944690"
             target="_blank"
             class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-full transition-colors"
+            title="Fazer pedido pelo WhatsApp"
+            aria-label="Fazer pedido pelo WhatsApp"
           >
             <img class="w-5 h-5" src="/whats-app.svg" alt="whats-app-button" />
             <span>Pedidos</span>
