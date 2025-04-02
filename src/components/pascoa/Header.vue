@@ -1,11 +1,11 @@
 <template>
   <header class="bg-gradient-to-b from-brown-600 to-brown-700 text-white py-6">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-6">
       <div class="flex justify-between items-center">
         <img
           src="/logo.jpeg"
           alt="Doces Tatá"
-          class="w-32 h-32 rounded-full border-4 border-pink-200 object-cover"
+          class="w-28 h-28 rounded-full border-4 border-pink-200 object-cover"
         />
 
         <div class="flex flex-col-reverse md:flex-row gap-4">
