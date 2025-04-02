@@ -1,8 +1,6 @@
 <template>
-  <!-- Menu Items -->
   <div class="container mx-auto px-4 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      <!-- Crie um skeleton loader com 6 items -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <template v-if="loading">
         <div
           v-for="index in 6"
@@ -11,11 +9,11 @@
         >
           <div class="h-80 bg-gray-200"></div>
           <div class="p-6">
-            <div class="h-6 bg-gray-200 mb-2"></div>
-            <div class="h-4 bg-gray-200 mb-4"></div>
-            <div class="h-4 bg-gray-200 mb-4"></div>
-            <div class="h-4 bg-gray-200 mb-4"></div>
-            <div class="h-6 bg-gray-200 mb-4"></div>
+            <div class="h-6 bg-gray-200 mb-2 rounded-md"></div>
+            <div class="h-4 bg-gray-200 mb-4 rounded-md"></div>
+            <div class="h-4 bg-gray-200 mb-4 rounded-md"></div>
+            <div class="h-4 bg-gray-200 mb-4 rounded-md"></div>
+            <div class="h-6 bg-gray-200 mb-4 rounded-md"></div>
           </div>
         </div>
       </template>
