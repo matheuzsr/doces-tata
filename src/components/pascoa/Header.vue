@@ -3,7 +3,7 @@
     <div class="container mx-auto px-6">
       <div class="flex justify-between items-center">
         <img
-          src="/logo.jpeg"
+          src="/logo.webp"
           alt="Doces Tatá"
           class="w-28 h-28 rounded-full border-4 border-pink-200 object-cover"
         />
