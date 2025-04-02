@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { supabase } from '@/src/lib/supabase'
+import { supabase } from '@/infra/supabase'
 import Header from '@/src/components/pascoa/Header.vue'
 import EasterBanner from '@/src/components/pascoa/EasterBanner.vue'
 import Footer from '@/src/components/pascoa/Footer.vue'
