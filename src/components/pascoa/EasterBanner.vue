@@ -5,7 +5,7 @@
     </h1>
     <p class="text-xl text-brown-600 max-w-2xl mx-auto px-4">
       Celebre a Páscoa com nossos doces artesanais feitos com muito amor e
-      carinho
+      carinho.
     </p>
     <div class="mt-6">
       <Egg class="inline-block w-12 h-12 text-brown-700 animate-bounce" />
