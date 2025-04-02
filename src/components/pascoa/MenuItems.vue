@@ -44,7 +44,7 @@
             <a
               :href="getURL(item)"
               target="_blank"
-              class="orderButton bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full flex items-center gap-2 transition-colors"
+              class="orderButton bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-full flex items-center gap-2 transition-colors"
             >
               <img class="w-5 h-5" src="/whats-app.svg" alt="whats-app-button" />
               Encomendar

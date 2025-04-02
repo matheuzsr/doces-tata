@@ -12,7 +12,8 @@
           <a
             href="https://www.instagram.com/docestata___"
             target="_blank"
-            class="flex items-center gap-2 bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-full transition-colors"
+            class="flex items-center gap-2 bg-pink-600 hover:bg-pink-700 text-white font-medium px-4 py-2 rounded-full transition-colors
+"
           >
             <Instagram class="w-5 h-5" />
             <span>@docestata___</span>
@@ -20,7 +21,7 @@
           <a
             href="https://wa.me/5528999944690"
             target="_blank"
-            class="flex items-center gap-2 bg-green-500 hover:bg-green-600 px-4 py-2 rounded-full transition-colors"
+            class="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-full transition-colors"
           >
             <img class="w-5 h-5" src="/whats-app.svg" alt="whats-app-button" />
             <span>Pedidos</span>
