@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
-import { supabase } from '@/infra/supabase'
+import { supabase } from './infra/supabase'
 import Header from '@/src/components/pascoa/Header.vue'
 import EasterBanner from '@/src/components/pascoa/EasterBanner.vue'
 import Footer from '@/src/components/pascoa/Footer.vue'
-import MenuItems, { EasterItems } from '@/src/components/pascoa/MenuItems.vue'
+import MenuItems, { EasterItems } from './components/pascoa/MenuItems.vue'
 
 const easterItems = ref<EasterItems[]>([])
 
