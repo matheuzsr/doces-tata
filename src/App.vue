@@ -32,7 +32,7 @@ onMounted(() => {
   <div class="min-h-screen bg-pink-50">
     <Header />
     <EasterBanner />
-    <MenuItems :items="easterItems" />
+    <MenuItems v-if="easterItems.length" :items="easterItems" />
     <Footer />
   </div>
 </template>
