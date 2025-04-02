@@ -1,10 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import App from './src/App.vue'
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import Pascoa2025 from '@/pages/pascoa-2025.vue'
 
-const routes = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    component: App,
+    redirect: '/pascoa-2025'
+  },
+  {
+    path: '/pascoa-2025',
+    component: Pascoa2025,
   }
 ]
 

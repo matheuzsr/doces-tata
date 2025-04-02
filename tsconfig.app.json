@@ -3,8 +3,10 @@
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue",
+    "pages/**/*.vue",
     "test/**/*.spec.ts",
-    "infra/**/*"
+    "infra/**/*",
+    "*"
   ],
   "exclude": [
     "node_modules",
