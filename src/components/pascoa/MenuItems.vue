@@ -13,9 +13,9 @@
           class="w-full h-80 object-cover"
         />
         <div class="p-6">
-          <h3 class="text-2xl font-bold text-brown-800 mb-2">
+          <span class="text-2xl font-bold text-brown-800 mb-2">
             {{ item.name }}
-          </h3>
+          </span>
           <p class="text-gray-600 mb-4">{{ item.description }}</p>
           <div class="flex items-center flex-wrap">
             <span
