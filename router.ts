@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import App from './src/App.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import App from './src/App.vue'
 
 const routes = [
   {
@@ -9,13 +9,12 @@ const routes = [
   {
     path: '/pascoa-2025',
     component: () => import('./pages/pascoa-2025.vue'),
-  }
-];
+  },
+]
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
-});
+})
 
-
-export default router;
+export default router

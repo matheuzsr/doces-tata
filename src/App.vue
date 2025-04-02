@@ -1,31 +1,31 @@
 <script setup lang="ts">
-import { ref, onMounted } from "vue";
-import { supabase } from "@/src/lib/supabase";
-import Header from "@/src/components/pascoa/Header.vue";
-import EasterBanner from "@/src/components/pascoa/EasterBanner.vue";
-import Footer from "@/src/components/pascoa/Footer.vue";
-import MenuItems, { EasterItems } from "@/src/components/pascoa/MenuItems.vue";
+import { ref, onMounted } from 'vue'
+import { supabase } from '@/src/lib/supabase'
+import Header from '@/src/components/pascoa/Header.vue'
+import EasterBanner from '@/src/components/pascoa/EasterBanner.vue'
+import Footer from '@/src/components/pascoa/Footer.vue'
+import MenuItems, { EasterItems } from '@/src/components/pascoa/MenuItems.vue'
 
-const easterItems = ref<EasterItems[]>([]);
+const easterItems = ref<EasterItems[]>([])
 
 const loadProducts = async () => {
   const { data, error } = await supabase
-    .from("products")
-    .select("*")
-    .is("deleted_at", null)
-    .order("order", { ascending: true });
+    .from('products')
+    .select('*')
+    .is('deleted_at', null)
+    .order('order', { ascending: true })
 
   if (error) {
-    console.error("Error loading products:", error);
-    return;
+    console.error('Error loading products:', error)
+    return
   }
-  
-  easterItems.value = data;
-};
+
+  easterItems.value = data
+}
 
 onMounted(() => {
-  loadProducts();
-});
+  loadProducts()
+})
 </script>
 
 <template>

@@ -7,11 +7,7 @@
         :key="item.id"
         class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition-transform"
       >
-        <img
-          :src="item?.image_url"
-          :alt="item.name"
-          class="w-full h-80 object-cover"
-        />
+        <img :src="item?.image_url" :alt="item.name" class="w-full h-80 object-cover" />
         <div class="p-6">
           <h3 class="text-2xl font-bold text-brown-800 mb-2">
             {{ item.name }}
@@ -25,9 +21,7 @@
             >
               <span class="text-wrap">
                 {{ flavor }}
-                <span v-if="item.flavors.length - 1 !== index" class="mx-1"
-                  >|</span
-                >
+                <span v-if="item.flavors.length - 1 !== index" class="mx-1">|</span>
               </span>
             </span>
           </div>
@@ -42,9 +36,7 @@
           </div>
 
           <div class="flex justify-between items-center">
-            <span class="text-2xl font-bold text-brown-800">{{
-              formatMoney(item?.price)
-            }}</span>
+            <span class="text-2xl font-bold text-brown-800">{{ formatMoney(item?.price) }}</span>
             <a
               :href="getURL(item)"
               target="_blank"
@@ -62,35 +54,35 @@
 
 <script lang="ts" setup>
 export interface EasterItems {
-  id: string;
-  name: string;
-  description: string;
-  price: number;
-  image_url: string;
-  sizes: string[];
-  flavors: string;
+  id: string
+  name: string
+  description: string
+  price: number
+  image_url: string
+  sizes: string[]
+  flavors: string
 }
-defineProps<{ items: EasterItems[] }>();
+defineProps<{ items: EasterItems[] }>()
 
 function getURL(product: EasterItems) {
-  const phoneNumber = "5528999944690";
+  const phoneNumber = '5528999944690'
   // Format com intl para BRL
-  const price = formatMoney(product.price);
+  const price = formatMoney(product.price)
 
   const message =
     `Olá, Tata! Gostaria de encomendar:\n\n` +
     `*🥚 ${product.name}*\n` +
     `📌 *${product.description}*\n` +
     `💰 *Valor:* ${price}\n` +
-    `Podemos seguir com o pedido?`;
+    `Podemos seguir com o pedido?`
 
-  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
 }
 
 function formatMoney(price: number) {
-  return new Intl.NumberFormat("pt-BR", {
-    style: "currency",
-    currency: "BRL",
+  return new Intl.NumberFormat('pt-BR', {
+    style: 'currency',
+    currency: 'BRL',
   }).format(price)
 }
 </script>
