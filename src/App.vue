@@ -1,3 +1,12 @@
+<template>
+  <div class="min-h-screen bg-pink-50">
+    <Header />
+    <EasterBanner />
+    <MenuItems :items="easterItems" :loading="loading" />
+    <Footer />
+  </div>
+</template>
+
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { supabase } from './infra/supabase'
@@ -30,12 +39,3 @@ onMounted(() => {
   loadProducts()
 })
 </script>
-
-<template>
-  <div class="min-h-screen bg-pink-50">
-    <Header />
-    <EasterBanner />
-    <MenuItems :items="easterItems" :loading="loading" />
-    <Footer />
-  </div>
-</template>
