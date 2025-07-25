@@ -10,13 +10,13 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue'
 import { supabase } from '@/infra/supabase'
-import Header from '@/src/components/pascoa/Header.vue'
-import EasterBanner from '@/src/components/pascoa/EasterBanner.vue'
-import Footer from '@/src/components/pascoa/Footer.vue'
-import MenuItems, { EasterItems } from '@/src/components/pascoa/MenuItems.vue'
+import Header from '@/src/components/morangoDoAmor/Header.vue'
+import EasterBanner from '@/src/components/morangoDoAmor/EasterBanner.vue'
+import Footer from '@/src/components/morangoDoAmor/Footer.vue'
+import MenuItems, { EasterItems } from '@/src/components/morangoDoAmor/MenuItems.vue'
 
 const easterItems = ref<EasterItems[]>([])
-  const loading = ref<boolean>(false)
+const loading = ref<boolean>(false)
 
 const loadProducts = async () => {
   loading.value = true
@@ -32,10 +32,10 @@ const loadProducts = async () => {
       )
     `,
     )
-    .eq('product_categories.categories.name', 'pascoa-2025')
+    .eq('product_categories.categories.name', 'morango-do-amor')
     .is('deleted_at', null)
     .order('order', { ascending: true })
-    loading.value = false
+  loading.value = false
 
   if (error) {
     console.error('Error loading products:', error)
