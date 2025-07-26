@@ -109,14 +109,17 @@ const quantity = ref(1)
 
 function getURL(product: EasterItems) {
   const phoneNumber = '5528999944690'
-  // Format com intl para BRL
   const price = formatMoney(product.price)
+
+  const strawberryEmoji = '\uD83C\uDF53' // 🍓
+  const pinEmoji = '\uD83D\uDCCC' // 📌
+  const moneyEmoji = '\uD83D\uDCB0' // 💰
 
   const message =
     `Olá, Tata! Gostaria de encomendar:\n\n` +
-    `*🍓 ${product.name}*\n` +
-    `📌 *${product.description}*\n` +
-    `💰 *Valor:* ${price}\n` +
+    `*${strawberryEmoji} ${product.name}*\n` +
+    `${pinEmoji} *${product.description}*\n` +
+    `${moneyEmoji} *Valor:* ${price}\n` +
     `*Quantidade:* ${quantity.value}\n` +
     `Podemos seguir com o pedido?`
 

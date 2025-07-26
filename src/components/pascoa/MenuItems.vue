@@ -83,18 +83,21 @@ export interface EasterItems {
   sizes: string[]
   flavors: string
 }
-defineProps<{ items: EasterItems[], loading: boolean }>()
+defineProps<{ items: EasterItems[]; loading: boolean }>()
 
 function getURL(product: EasterItems) {
   const phoneNumber = '5528999944690'
-  // Format com intl para BRL
   const price = formatMoney(product.price)
+
+  const eggEmoji = '\uD83E\uDD5A' // 🥚
+  const pinEmoji = '\uD83D\uDCCC' // 📌
+  const moneyEmoji = '\uD83D\uDCB0' // 💰
 
   const message =
     `Olá, Tata! Gostaria de encomendar:\n\n` +
-    `*🥚 ${product.name}*\n` +
-    `📌 *${product.description}*\n` +
-    `💰 *Valor:* ${price}\n` +
+    `*${eggEmoji} ${product.name}*\n` +
+    `${pinEmoji} *${product.description}*\n` +
+    `${moneyEmoji} *Valor:* ${price}\n` +
     `Podemos seguir com o pedido?`
 
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
