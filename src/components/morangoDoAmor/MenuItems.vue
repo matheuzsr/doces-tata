@@ -111,16 +111,15 @@ function getURL(product: EasterItems) {
   const phoneNumber = '5528999944690'
   const price = formatMoney(product.price)
 
-  const strawberryEmoji = '\uD83C\uDF53' // 🍓
-  const pinEmoji = '\uD83D\uDCCC' // 📌
-  const moneyEmoji = '\uD83D\uDCB0' // 💰
-
   const message =
     `Olá, Tata! Gostaria de encomendar:\n\n` +
-    `*${strawberryEmoji} ${product.name}*\n` +
-    `${pinEmoji} *${product.description}*\n` +
-    `${moneyEmoji} *Valor:* ${price}\n` +
+    `*${product.name}*\n` +
+    `*${product.description}*\n` +
+    `*Valor unitário:* ${price}\n` +
     `*Quantidade:* ${quantity.value}\n` +
+    `*Valor total:* ${formatMoney(product.price * quantity.value)}\n\n` +
+    `*Forma de pagamento:* Cartão/Pix/Dinheiro\n` +
+    `(Entrega ou retirada)\n\n` +
     `Podemos seguir com o pedido?`
 
   return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
