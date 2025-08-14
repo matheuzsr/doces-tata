@@ -54,31 +54,48 @@
                 {{ size }}
               </span>
             </div>
-
-            <div class="flex justify-between items-center">
-              <span class="text-2xl font-bold text-strawberry-800">{{
-                formatMoney(item?.price)
-              }}</span>
-              <div class="flex items-center gap-2">
-                <select
-                  v-model="quantity"
-                  class="px-3 py-2 border border-strawberry-300 rounded-lg text-strawberry-800 bg-white focus:outline-none focus:ring-2 focus:ring-strawberry-500 focus:border-transparent text-sm font-medium min-w-[60px] cursor-pointer hover:border-strawberry-400 transition-colors"
-                >
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                </select>
+            <div class="flex flex-col">
+              <div class="flex">
+                <span class="text-2xl font-bold text-strawberry-800">
+                  {{ formatMoney(item?.price) }}
+                </span>
+              </div>
+              <div class="flex gap-2 items-center justify-between">
+                <div class="flex flex-col gap-2  ">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-sm text-gray-500">Quantidade</span>
+                    <select
+                      v-model="quantity"
+                      class="px-3 py-2 border border-strawberry-300 rounded-lg text-strawberry-800 bg-white focus:outline-none focus:ring-2 focus:ring-strawberry-500 focus:border-transparent text-sm font-medium min-w-[60px] cursor-pointer hover:border-strawberry-400 transition-colors"
+                    >
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                      <option value="10">10</option>
+                    </select>
+                  </div>
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-sm text-gray-500">Forma de pagamento</span>
+                    <select
+                      v-model="paymentMethod"
+                      class="px-3 py-2 border border-strawberry-300 rounded-lg text-strawberry-800 bg-white focus:outline-none focus:ring-2 focus:ring-strawberry-500 focus:border-transparent text-sm font-medium min-w-[60px] cursor-pointer hover:border-strawberry-400 transition-colors"
+                    >
+                      <option value="card">Cartão</option>
+                      <option value="pix">Pix</option>
+                      <option value="money">Dinheiro</option>
+                    </select>
+                  </div>
+                </div>
                 <a
                   :href="getURL(item)"
                   target="_blank"
-                  class="orderButton bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-full flex items-center gap-2 transition-colors"
+                  class="orderButton bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-full flex items-center gap-2 transition-colors h-fit"
                 >
                   <img class="w-5 h-5" src="/whats-app.svg" alt="whats-app-button" />
                   Encomendar
@@ -106,6 +123,7 @@ export interface EasterItems {
 }
 defineProps<{ items: EasterItems[]; loading: boolean }>()
 const quantity = ref(1)
+const paymentMethod = ref('pix')
 
 function getURL(product: EasterItems) {
   const phoneNumber = '5528999944690'
@@ -118,7 +136,7 @@ function getURL(product: EasterItems) {
     `*Valor unitário:* ${price}\n` +
     `*Quantidade:* ${quantity.value}\n` +
     `*Valor total:* ${formatMoney(product.price * quantity.value)}\n\n` +
-    `*Forma de pagamento:* Cartão/Pix/Dinheiro\n` +
+    `*Forma de pagamento:* ${paymentMethod.value}\n` +
     `(Entrega ou retirada)\n\n` +
     `Podemos seguir com o pedido?`
 
